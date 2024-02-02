@@ -1,0 +1,20 @@
+{
+  "name": "nature",
+  "version": "1.0.0",
+  "description": "Sounds of nature app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sqMax2/nature.git"
+  },
+  "keywords": [
+    "webpack",
+    "js",
+    "sound"
+  ],
+  "author": "sqMax",
+  "license": "ISC"
+}
