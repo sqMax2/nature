@@ -5,5 +5,9 @@ const common = require('./webpack.config.common.js');
 
 module.exports = merge(common, {
     mode: 'development',
-    // add your configuration options here
+	devServer: {
+		port: 3000,
+		open: true,
+		hot: true
+	}
 });
