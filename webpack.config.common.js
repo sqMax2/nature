@@ -5,6 +5,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 // create base webpack config
 module.exports = {
+	context: path.resolve(__dirname, 'src'),
 	entry: './src/index.js',
 	output: {
 		path: path.resolve(__dirname, 'dist'),
