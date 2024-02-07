@@ -16,6 +16,7 @@ body {
 	font-family: 'Roboto', sans-serif;
 	/* background-image: url('./../public/assets/summer-bg.jpg'); */
 	background-size: cover;
+	background-position: center;
 }
 
 * {
@@ -36,7 +37,6 @@ body {
 
 .main h1 {
 	font-size: 4rem;
-	color: orange;
 }
 
 .control {
@@ -70,13 +70,26 @@ body {
 
 .sunny {
 	background-image: url('./../public/assets/summer-bg.jpg');
+	color: orange;
 }
 
 .snowy {
 	background-image: url('./../public/assets/winter-bg.jpg');
+	color: slategrey;
 }
 
 .rainy {
 	background-image: url('./../public/assets/rainy-bg.jpg');
+	color: navy;
 }
 
+@media (max-width: 600px) {
+	.buttons {
+		flex-direction: column;
+	}
+
+	h1 {
+		text-align: center;
+	}
+	
+}
