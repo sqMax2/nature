@@ -12,13 +12,14 @@ module.exports = merge(common, {
 		hot: true
 	},
 	plugins: [new ESLintPlugin()],
-	module: {
-		rules: [
-			{
-				test: /\.js$/,
-				exclude: /node_modules/,
-				use: 'eslint-loader',
-			}
-		]
-	}
+	// TODO: probably, obsolete code. If so, remove
+	// module: {
+	// 	rules: [
+	// 		{
+	// 			test: /\.js$/,
+	// 			exclude: /node_modules/,
+	// 			use: 'eslint-loader',
+	// 		}
+	// 	]
+	// }
 });
