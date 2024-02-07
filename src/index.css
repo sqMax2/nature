@@ -14,7 +14,7 @@
 
 body {
 	font-family: 'Roboto', sans-serif;
-	background-image: url('./../public/assets/summer-bg.jpg');
+	/* background-image: url('./../public/assets/summer-bg.jpg'); */
 	background-size: cover;
 }
 
@@ -68,15 +68,15 @@ body {
 	height: 30%;
 }
 
-button.sunny {
+.sunny {
 	background-image: url('./../public/assets/summer-bg.jpg');
 }
 
-button.snowy {
+.snowy {
 	background-image: url('./../public/assets/winter-bg.jpg');
 }
 
-button.rainy {
+.rainy {
 	background-image: url('./../public/assets/rainy-bg.jpg');
 }
 
