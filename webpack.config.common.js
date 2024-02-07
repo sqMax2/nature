@@ -28,7 +28,8 @@ module.exports = {
 			},
 			{
 				test: /\.(jpg|png|svg|gif)$/,
-				use: ['url-loader', 'file-loader'],
+				type: 'asset/resource',
+				// use: ['url-loader', 'file-loader'],
 			},
 		],
 	},
@@ -40,8 +41,8 @@ module.exports = {
 		new CopyWebpackPlugin({
 			patterns: [
 				{ 
-					from: path.resolve(__dirname, 'public', 'assets'),
-					to: path.resolve(__dirname, 'dist', 'assets'),
+					from: path.resolve(__dirname, 'public/assets'),
+					to: path.resolve(__dirname, 'dist/assets'),
 				},
 			],
 		}),
