@@ -2,7 +2,7 @@
   "name": "nature",
   "version": "1.0.0",
   "description": "Sounds of nature app",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "start": "npx webpack serve --config webpack.config.dev.js",
     "build": "npx webpack --config webpack.config.prod.js",
