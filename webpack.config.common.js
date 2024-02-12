@@ -31,8 +31,16 @@ module.exports = {
 				type: 'asset/resource',
 				// use: ['url-loader', 'file-loader'],
 			},
+			{
+				test: /\.[jt]s$/,
+				exclude: /node_modules/,
+				use: 'ts-loader',
+			}
 		],
 	},
+	resolve: {
+		extensions: ['.ts', '.js'],
+	}
 	plugins: [
 		new HtmlWebpackPlugin({
 			template: path.resolve(__dirname, 'public', 'index.html'),
