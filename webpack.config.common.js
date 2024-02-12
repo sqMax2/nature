@@ -40,7 +40,7 @@ module.exports = {
 	},
 	resolve: {
 		extensions: ['.ts', '.js'],
-	}
+	},
 	plugins: [
 		new HtmlWebpackPlugin({
 			template: path.resolve(__dirname, 'public', 'index.html'),
